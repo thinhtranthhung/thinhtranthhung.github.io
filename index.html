@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Computer Science Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">&lt;HT /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="container">
+        <div class="hero-content">
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="name">Hung Thinh</h1>
+            <h2 class="subtitle"><span id="typing-text"></span><span class="cursor">|</span></h2>
+            <p class="description">
+                I'm a sophomore Computer Science student specializing in building scalable software systems and exploring cybersecurity. I have a strong foundation in algorithm complexity analysis and enjoy solving real-world problems through clean, efficient code.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">Check out my work</a>
+                <a href="https://github.com/thinhtranthhung" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/th%E1%BB%8Bnh-tr%E1%BA%A7n-49a98a385/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container hidden">
+        <h2 class="section-title"><span class="number">01.</span> About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    Hello! I'm a sophomore CS student with a deep focus on Cyber Security, specifically penetration testing and binary exploitation. My journey in tech quickly shifted from general programming to a fascination with low-level system architecture and how software vulnerabilities are discovered and weaponized.
+                </p>
+                <p>
+                    Currently, my primary focus is on offensive security. I spend most of my free time grinding Pwnable CTF challenges, reverse engineering binaries, and analyzing memory corruption vulnerabilities. I am comfortable diving into system internals and writing custom exploits using C, Python, Bash, and Assembly (MIPS).
+                </p>
+                <p>
+                    My goal is to secure an internship in penetration testing or security research, where I can apply my offensive mindset and technical skills to uncover vulnerabilities and help secure real-world systems.
+                </p>
+            </div>
+            <div class="about-image">
+                <div class="img-wrapper">
+                    <img src="/assets/avatar.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container hidden">
+        <h2 class="section-title"><span class="number">02.</span> Technical Arsenal</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-tags">
+                    <span>C / C++</span><span>Python</span><span>Assembly (MIPS/x86)</span><span>Bash</span><span>JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Technologies & Tools</h3>
+                <div class="skill-tags">
+                    <span>GDB (pwndbg)</span><span>pwntools</span><span>Ghidra </span><span>Burp Suite</span><span>Nmap</span><span>Linux</span><span>Docker</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> Core Competencies</h3>
+                <div class="skill-tags">
+                    <span>Binary Exploitation (Pwn)</span><span>Reverse Engineering</span><span>Web Pentesting</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container hidden">
+        <h2 class="section-title"><span class="number">03.</span> Some Things I've Built</h2>
+        
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="project-overline">Featured Project &mdash; System Architecture</p>
+                    <h3 class="project-title">Real-Time Traffic Analytics System</h3>
+                    
+                    <div class="project-description">
+                        <p>
+                            Architected and deployed a high-throughput, real-time data streaming pipeline capable of processing live CCTV video feeds from complex, high-density urban intersections (e.g., Hang Xanh, Lang Cha Ca).
+                        </p>
+                        <p style="margin-top: 10px;">
+                            Integrated <strong>YOLOv8</strong> for continuous object detection and vehicle classification. Strictly optimized the model's inference speed to handle low-latency video streams without frame dropping. Synchronized this visual telemetry with real-time geospatial routing metrics via the <strong>TomTom API</strong> to provide deep context on traffic flow and congestion.
+                        </p>
+                        <p style="margin-top: 10px;">
+                            Securely persisted the processed data into <strong>Neon DB</strong> (Serverless PostgreSQL) for scalable storage and historical analysis. This project highlights a strong ability to build robust distributed architectures, integrate secure APIs, and manage heavy, continuous data loads.
+                        </p>
+                    </div>
+                    
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>YOLOv8</li>
+                        <li>Neon DB</li>
+                        <li>TomTom API</li>
+                        <li>Data Pipeline</li>
+                    </ul>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/thinhtranthhung/traffic-streaming-analytics" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="project-overline">Academic Project</p>
+                    <h3 class="project-title">A Mini Trading Platform</h3>
+                    <div class="project-description">
+                        <p>
+                            Engineered the core backend for a financial trading platform managing diverse instruments. Architected a highly modular system utilizing advanced Object-Oriented patterns: implemented the <strong>Observer</strong> pattern for real-time event broadcasting, the <strong>Strategy</strong> pattern for dynamic pricing, and the <strong>Visitor</strong> pattern for tax analytics.
+                        </p>
+                        <p style="margin-top: 10px;">
+                            Designing this complex architecture provided a deep understanding of application states, object lifecycles, and portfolio state management. This serves as a crucial foundation for identifying business logic flaws and architectural vulnerabilities during penetration testing.
+                        </p>
+                    </div>
+                    
+                    <ul class="project-tech">
+                        <li>Java</li>
+                        <li>Design Patterns (GoF)</li>
+                        <li>System Architecture</li>
+                        <li>OOP</li>
+                        <li>Data Structures</li>
+                    </ul>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/thinhtranthhung/mini_trading_system" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="project-overline">Academic Project</p>
+                    <h3 class="project-title">Large-Scale Text Deduplication</h3>
+                    <div class="project-description">
+                        <p>Built a high-performance deduplication engine to identify and eliminate near-duplicate records across massive text corpora. Implemented advanced probabilistic data structures like <strong>MinHash</strong> and <strong>Locality-Sensitive Hashing (LSH)</strong> to achieve optimal time-space complexity.
+                    </div>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>MinHash/LSH</li>
+                        <li>Algorithms</li>
+                        <li>Data Structures</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/thinhtranthhung/text-deduplication" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container hidden">
+        <h2 class="section-title center"><span class="number">04.</span> What's Next?</h2>
+        <h2 class="contact-heading">Get In Touch</h2>
+        <p class="contact-desc">
+            I'm currently looking for new opportunities, specifically internships where I can apply my skills in software development or cybersecurity. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+        </p>
+        <a href="mailto:thinh.tranthhung@gmail.com" class="btn-primary contact-btn">Say Hello</a>
+    </section>
+
+    <footer>
+        <p>Built with ❤️ by Hung Thinh</p>
+        <p class="tech-stack-footer">HTML &middot; CSS &middot; Vanilla JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
